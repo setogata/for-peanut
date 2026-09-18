@@ -1,13 +1,318 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <title>for my dearest sweet peanut</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>for my dearest sweet peanut</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url("assets/background.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #8f3d68;
+    overflow-x: hidden;
+}
+
+/* OPENING PAGE */
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+}
+
+.title {
+    background: #fff4fa;
+    border: 3px solid #e6a4c3;
+    border-radius: 15px;
+    padding: 12px 20px;
+    box-shadow: 4px 4px 0 #d889ad;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.cat-button {
+    background: #fff7fb;
+    border: 3px solid #e6a4c3;
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 4px 4px 0 #d889ad;
+    cursor: pointer;
+    max-width: 260px;
+}
+
+.cat-button img {
+    width: 100%;
+    max-width: 220px;
+    display: block;
+}
+
+.cat-text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* LETTER PAGE */
+
+#letterPage {
+    display: none;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.notebook {
+    max-width: 850px;
+    margin: auto;
+    min-height: 900px;
+    background-image: url("assets/notebook.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 90px 13% 120px 17%;
+    color: #6d5060;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.letter-text {
+    white-space: pre-line;
+}
+
+/* PINKIE */
+
+#pinkieSection {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+#pinkieSection img {
+    width: 220px;
+    max-width: 70%;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+.pinkie-text {
+    margin-top: 12px;
+    background: #fff4fa;
+    border: 2px solid #e6a4c3;
+    border-radius: 12px;
+    display: inline-block;
+    padding: 8px 15px;
+    font-weight: bold;
+    box-shadow: 3px 3px 0 #d889ad;
+}
+
+/* POPUP */
+
+#popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(80, 30, 55, 0.45);
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    z-index: 100;
+}
+
+.popup-box {
+    background: #fff1f8;
+    border: 4px solid #e29abd;
+    border-radius: 22px;
+    padding: 30px 25px;
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+    box-shadow: 7px 7px 0 #c9759d;
+}
+
+.popup-box h2 {
+    margin-top: 0;
+    font-size: 23px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.popup-buttons button {
+    border: 2px solid #c86e9a;
+    background: #ffd1e5;
+    color: #7d315b;
+    padding: 10px 25px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#noMessage {
+    display: none;
+    margin-top: 20px;
+    font-size: 17px;
+}
+</style>
 </head>
 
 <body>
 
-    <h1>for my dearest sweet peanut</h1>
+<audio id="music" loop autoplay>
+    <source src="assets/distant-lover.mp3" type="audio/mpeg">
+</audio>
+
+<section id="home">
+
+    <div class="title">
+        for my dearest sweet peanut
+    </div>
+
+    <div class="cat-button" onclick="openLetter()">
+
+        <img src="assets/cat.png" alt="cute cat">
+
+        <div class="cat-text">
+            peanut, click the cat pls →
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="letterPage">
+
+    <div class="notebook">
+
+        <div class="letter-text">
+
+i wanted to say some stuff on my end about the talk we had before. i dont think i really conveyed what i was trying to say very well because i wasnt thinking about it as clearly while i was typing as i am now. i feel like it probably came across as something like we think the air feels heavy when youre around, or that i was trying to get you to join the server or talk to the girls. thats not what i was trying to say at all, and i really wanted to correct that because i would hate for you to think thats how i see you.
+
+what i was feeling was that the distance between you and the group felt like something that was separating us and i didnt like seeing you left out. i understand why being left out of the server hurt you, and i dont blame you for being upset about it at all. i know that probably hurt more than i was giving it credit for, and i never meant to make you feel like i was telling you that you to get over it.
+
+i was really trying to communicate that i dont want to lose you. youre genuinely important to me, and i dont think ive done a very good job of expressing just how much i care about having you in my life. i feel like in trying to talk about everything, i ended up pushing you away personally, and thats something ive been thinking about a lot because the last thing i ever wanted was for you to feel unwanted by me.
+
+i hold you guys to certain standards because youre my closest friends, but i think little things matter a ton to me because i care about you all so much. when youre gone i notice it and it feels heavy. i dont want you to start to dislike any of us. your recent absence has been getting to me because i miss you. i mean everyone misses you.
+
+i dont want you to think that means i expect you to be around people you dont want to be around or that i want you to force yourself into that server. thats not what i want. i dont want you to have to change yourself or ignore how you feel just to make me happy. i just want you to know that i really like having you around and talking with you.
+
+i dont really know how to explain this kind of thing without making it sound way more serious than i mean it to be. just know that i care about you a lot. i got so caught up in explaining everything else that i ended up making it sound completely different.
+
+i didnt want you to walk away from that conversation thinking i was trying to say that you make everyone uncomfortable or that i was trying to force you to join a server or that i wanted you to change anything about yourself. i wanted to be honest about something that was hurting me while also making sure you knew that none of it changed how much i care about you.
+
+i want you in my life and to keep having conversations with you even if theyre short. i just wish i had been better at saying that. this goes for everyone by the way everyone misses you a ton.
+
+        </div>
+
+    </div>
+
+
+    <div id="pinkieSection">
+
+        <img
+            src="assets/pinkie.png"
+            alt="Pinkie Pie"
+            onclick="showPopup()"
+        >
+
+        <div class="pinkie-text">
+            click pinkie to continue
+        </div>
+
+    </div>
+
+</section>
+
+
+<div id="popup">
+
+    <div class="popup-box">
+
+        <h2>peanut will you come back?</h2>
+
+        <div class="popup-buttons">
+
+            <button onclick="yesClicked()">yes</button>
+
+            <button onclick="noClicked()">no</button>
+
+        </div>
+
+        <div id="noMessage">
+            thats okay dont feel pressured love you &lt;3
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+const music = document.getElementById("music");
+
+document.addEventListener("click", function() {
+    music.play().catch(() => {});
+}, { once: true });
+
+
+function openLetter() {
+
+    document.getElementById("home").style.display = "none";
+
+    document.getElementById("letterPage").style.display = "block";
+
+    window.scrollTo(0, 0);
+
+}
+
+
+function showPopup() {
+
+    document.getElementById("popup").style.display = "flex";
+
+}
+
+
+function yesClicked() {
+
+    window.location.href = "https://discord.gg/ur8RxcrsY";
+
+}
+
+
+function noClicked() {
+
+    document.getElementById("noMessage").style.display = "block";
+
+}
+
+</script>
 
 </body>
 </html>
